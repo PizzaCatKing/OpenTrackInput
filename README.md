@@ -10,6 +10,9 @@ How to use:
 - Set the port to the same as above
 - Set the input to the test tracker
 
+![Open track's UDP over network settings dialog]./docs/look_it_totally_works_I_swear.PNG "Open track's UDP over network settings dialog")
+
 - Start tracking in open track
 
 - The values should start updating in real time (x, y, and z aren't updated by the test tracker)
+![Open track and OpenTrackInput working together]./docs/look_it_totally_works_I_swear.PNG "Proof that the app totally works and I am not just making it up")
