@@ -58,6 +58,7 @@ Partial Class Form1
         Me.PortTB.Name = "PortTB"
         Me.PortTB.Size = New System.Drawing.Size(100, 23)
         Me.PortTB.TabIndex = 1
+        Me.PortTB.Text = "4747"
         '
         'GroupBox1
         '
@@ -75,7 +76,7 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Location = New System.Drawing.Point(13, 39)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(302, 115)
+        Me.GroupBox1.Size = New System.Drawing.Size(499, 115)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Raw Data"
@@ -83,15 +84,18 @@ Partial Class Form1
         'RawDataRollTB
         '
         Me.RawDataRollTB.Enabled = False
-        Me.RawDataRollTB.Location = New System.Drawing.Point(182, 74)
+        Me.RawDataRollTB.Location = New System.Drawing.Point(284, 74)
         Me.RawDataRollTB.Name = "RawDataRollTB"
-        Me.RawDataRollTB.Size = New System.Drawing.Size(100, 23)
+        Me.RawDataRollTB.ReadOnly = True
+        Me.RawDataRollTB.Size = New System.Drawing.Size(200, 23)
         Me.RawDataRollTB.TabIndex = 15
+        Me.RawDataRollTB.Text = "0.000"
+        Me.RawDataRollTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(147, 77)
+        Me.Label5.Location = New System.Drawing.Point(249, 77)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(27, 15)
         Me.Label5.TabIndex = 14
@@ -100,15 +104,18 @@ Partial Class Form1
         'RawDataPitchTB
         '
         Me.RawDataPitchTB.Enabled = False
-        Me.RawDataPitchTB.Location = New System.Drawing.Point(182, 45)
+        Me.RawDataPitchTB.Location = New System.Drawing.Point(284, 45)
         Me.RawDataPitchTB.Name = "RawDataPitchTB"
-        Me.RawDataPitchTB.Size = New System.Drawing.Size(100, 23)
+        Me.RawDataPitchTB.ReadOnly = True
+        Me.RawDataPitchTB.Size = New System.Drawing.Size(200, 23)
         Me.RawDataPitchTB.TabIndex = 13
+        Me.RawDataPitchTB.Text = "0.000"
+        Me.RawDataPitchTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(147, 48)
+        Me.Label6.Location = New System.Drawing.Point(249, 48)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(34, 15)
         Me.Label6.TabIndex = 12
@@ -117,15 +124,18 @@ Partial Class Form1
         'RawDataYawTB
         '
         Me.RawDataYawTB.Enabled = False
-        Me.RawDataYawTB.Location = New System.Drawing.Point(182, 16)
+        Me.RawDataYawTB.Location = New System.Drawing.Point(284, 16)
         Me.RawDataYawTB.Name = "RawDataYawTB"
-        Me.RawDataYawTB.Size = New System.Drawing.Size(100, 23)
+        Me.RawDataYawTB.ReadOnly = True
+        Me.RawDataYawTB.Size = New System.Drawing.Size(200, 23)
         Me.RawDataYawTB.TabIndex = 11
+        Me.RawDataYawTB.Text = "0.000"
+        Me.RawDataYawTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(147, 19)
+        Me.Label7.Location = New System.Drawing.Point(249, 19)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(28, 15)
         Me.Label7.TabIndex = 10
@@ -136,8 +146,11 @@ Partial Class Form1
         Me.RawDataZTB.Enabled = False
         Me.RawDataZTB.Location = New System.Drawing.Point(41, 74)
         Me.RawDataZTB.Name = "RawDataZTB"
-        Me.RawDataZTB.Size = New System.Drawing.Size(100, 23)
+        Me.RawDataZTB.ReadOnly = True
+        Me.RawDataZTB.Size = New System.Drawing.Size(200, 23)
         Me.RawDataZTB.TabIndex = 9
+        Me.RawDataZTB.Text = "0.000"
+        Me.RawDataZTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label4
         '
@@ -153,8 +166,11 @@ Partial Class Form1
         Me.RawDataYTB.Enabled = False
         Me.RawDataYTB.Location = New System.Drawing.Point(41, 45)
         Me.RawDataYTB.Name = "RawDataYTB"
-        Me.RawDataYTB.Size = New System.Drawing.Size(100, 23)
+        Me.RawDataYTB.ReadOnly = True
+        Me.RawDataYTB.Size = New System.Drawing.Size(200, 23)
         Me.RawDataYTB.TabIndex = 7
+        Me.RawDataYTB.Text = "0.000"
+        Me.RawDataYTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label3
         '
@@ -170,8 +186,11 @@ Partial Class Form1
         Me.RawDataXTB.Enabled = False
         Me.RawDataXTB.Location = New System.Drawing.Point(41, 16)
         Me.RawDataXTB.Name = "RawDataXTB"
-        Me.RawDataXTB.Size = New System.Drawing.Size(100, 23)
+        Me.RawDataXTB.ReadOnly = True
+        Me.RawDataXTB.Size = New System.Drawing.Size(200, 23)
         Me.RawDataXTB.TabIndex = 5
+        Me.RawDataXTB.Text = "0.000"
+        Me.RawDataXTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label2
         '
@@ -206,7 +225,7 @@ Partial Class Form1
         Me.LogRTB.Location = New System.Drawing.Point(12, 160)
         Me.LogRTB.Name = "LogRTB"
         Me.LogRTB.ReadOnly = True
-        Me.LogRTB.Size = New System.Drawing.Size(303, 140)
+        Me.LogRTB.Size = New System.Drawing.Size(500, 140)
         Me.LogRTB.TabIndex = 7
         Me.LogRTB.Text = ""
         '
@@ -214,7 +233,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(332, 312)
+        Me.ClientSize = New System.Drawing.Size(533, 312)
         Me.Controls.Add(Me.LogRTB)
         Me.Controls.Add(Me.StopButton)
         Me.Controls.Add(Me.StartButton)

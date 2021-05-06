@@ -42,12 +42,17 @@ Public Class Form1
 
                     Dim receiveResults As UdpReceiveResult = Await UDPClient.ReceiveAsync().WithCancellation(cancellationToken)
 
+                    If receiveResults.Buffer.Length <> 48 Then
+                        log($"Buffer size was Not the right size {receiveResults.Buffer.Length }")
+                        Continue Do
+                    End If
+
                     Dim x = BitConverter.ToDouble(receiveResults.Buffer, 0)
                     Dim y = BitConverter.ToDouble(receiveResults.Buffer, 8)
                     Dim z = BitConverter.ToDouble(receiveResults.Buffer, 16)
                     Dim yaw = BitConverter.ToDouble(receiveResults.Buffer, 24)
                     Dim pitch = BitConverter.ToDouble(receiveResults.Buffer, 32)
-                    Dim roll = BitConverter.ToDouble(receiveResults.Buffer, 36)
+                    Dim roll = BitConverter.ToDouble(receiveResults.Buffer, 40)
 
                     Me.Invoke(Sub() setValues(x, y, z, yaw, pitch, roll))
 
