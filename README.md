@@ -10,7 +10,7 @@ How to use:
 - Set the port to the same as above
 - Set the input to the test tracker
 
-![Open track's UDP over network settings dialog](./docs/look_it_totally_works_I_swear.PNG "Open track's UDP over network settings dialog")
+![Open track's UDP over network settings dialog](./docs/open_track_output_settings.PNG "Open track's UDP over network settings dialog")
 
 - Start tracking in open track
 
