@@ -24,7 +24,7 @@ Public Class Form1
 
     End Sub
 
-    Private Async Function ListenUDP(port As Integer, cancellationToken As CancellationToken) As Task
+    Private Async Function ListenUDPAsync(port As Integer, cancellationToken As CancellationToken) As Task
         Dim UDPClient = New UdpClient()
         UDPClient.Client.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseAddress, True)
 
@@ -87,10 +87,10 @@ Public Class Form1
         StopButton.Enabled = True
         StartButton.Enabled = False
         cts = New CancellationTokenSource()
-        ListenUDP(port, cts.Token)
+        ListenUDPAsync(port, cts.Token)
     End Sub
 
-    Private Async Sub StopButton_Click(sender As Object, e As EventArgs) Handles StopButton.Click
+    Private Sub StopButton_Click(sender As Object, e As EventArgs) Handles StopButton.Click
         listening = False
         StopButton.Enabled = False
 
